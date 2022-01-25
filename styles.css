@@ -97,7 +97,7 @@ border: none;
     height: 3px;
     margin: 5px auto;
     transition: 0.3s ease-in;
-    background: #e02f6b;
+    background: #be63f3;
 }
 
 
@@ -105,10 +105,19 @@ border: none;
     opacity: 1;
 }
 
-.nav-link:hover{
+.link_1:hover{
     color: #be63f3;
 }
 
+.link_2:hover{
+    color: red;
+}
+.link_3:hover{
+    color: #FFE162;
+}
+.link_4:hover{
+    color: rgb(30, 207, 24);
+}
 
 
 
@@ -537,7 +546,6 @@ border: none;
 
 .button{
     line-height: 1.5;
-    border: 1px solid rgba(255, 255, 255, 0.25);
     display: inline-block;
     border-radius: 8px;
     text-transform: capitalize;
@@ -548,6 +556,7 @@ border: none;
     overflow: hidden;
     transition: 0.3s ease-out;
     background: none;
+    border-color: transparent;
 	padding: 15px;
 
 }
