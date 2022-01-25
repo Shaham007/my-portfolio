@@ -1,3 +1,5 @@
+// LOADER FUNCTIONALITY
+
 window.addEventListener("load", () => {
 
     document.querySelector(".page-loader").classList.add("fade-out");
