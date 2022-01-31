@@ -325,6 +325,20 @@ border: none;
     align-content: center;
 }
 
+.clicked-text-container{
+    border: 2px solid #be78e6;
+    background-image: linear-gradient( #e6ccf5, #aef1ee);
+    border-radius: 20px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 30px;
+    visibility: hidden;
+}
+
+
 .home-text, .home-img{
     width: 50%;
     padding: 4px;
@@ -332,8 +346,8 @@ border: none;
 }
 
 .home-text p{
-    font-size: 2rem;
-    font-family: 'The Nautigal', cursive;
+    font-size: 1.5rem;
+    font-family: 'Mochiy Pop P One', sans-serif;
 }
 
 

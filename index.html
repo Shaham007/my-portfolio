@@ -30,9 +30,9 @@
     <div class='navbar-main'>
         <nav class='Navbar'>
             <ul class="nav-links">
-                <li class="nav-item"><a class="nav-link link_1" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link link_1" href="#" >Home</a></li>
                 <li class="nav-item"><a class="nav-link link_2" href="#About" >About Me</a></li>
-                <li class="nav-item"><a class="nav-link link_3" href="#portfolio" >Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link link_3" href="#portfolio" >Projects</a></li>
                 <li class="nav-item"><a class="nav-link link_4" href="#Contact" >Contact</a></li>
             </ul>
             <div class="hamburger">
@@ -65,8 +65,14 @@
                             <p>Hello It's</p>
                             <h1>Shaham Mazhar</h1>
                             <h2>Front End Developer</h2>
-                            <a href='#About' class='button'> <span>More About Me</span> </a>
-                            <a href='#portfolio' class='button'> <span>Portfolio</span> </a>
+                            <div class="clicked-text-container">
+                                <p style="
+                                 font-size: 12px">Download <i class="fas fa-check"></i></p>
+                            </div>
+                            <a href='Shaham-Resume.pdf' id="cv-button"
+                             class='button' download onclick="audio.play();"> <span>Download CV</span> </a>
+                            <a href='#portfolio' class='button' onclick="audio.play();"> <span>Projects</span> </a>
+                           
                         </div>
                         <div class='home-img'>
                             <div class='img-box' style="background-image: url(image/IMG-7533.png);"></div>
@@ -125,28 +131,28 @@
         <div class='portfolio-content'>
             <section class='section'>
                 <div class='project-container'>
-                    <div class='project-items portfolio-img-box' style="background-image: url(image/IMG-7851.jpg);">
+                    <div class='project-items portfolio-img-box' style="background-image: url(image/project1.png);">
                         <a href=' https://shaham007.github.io/Personal-Website-01/' class='project-link'
                             target="_blank"> View Project</a>
                     </div>
-                    <div class='project-items portfolio-img-box' style="background-image: url(image/IMG-7851.jpg);">
-                        <a href='https://gracious-rosalind-758789.netlify.app' class='project-link' target="_blank">
+                    <div class='project-items portfolio-img-box' style="background-image: url(image/project2.png);">
+                        <a href='https://shaham007.github.io/recipe-app/' class='project-link' target="_blank">
                             View Project</a>
                     </div>
-                    <div class='project-items portfolio-img-box' style="background-image: url(image/IMG-7851.jpg);">
-                        <a href=' https://shaham007.github.io/Personal-Website-01/' class='project-link'
+                    <div class='project-items portfolio-img-box' style="background-image: url(image/project2.png);">
+                        <a href='https://shaham007.github.io/recipe-app/' class='project-link'
                             target="_blank"> View Project</a>
                     </div>
-                    <div class='project-items portfolio-img-box' style="background-image: url(image/IMG-7851.jpg);">
-                        <a href='https://thirsty-perlman-78585c.netlify.app' class='project-link' target="_blank"> View
+                    <div class='project-items portfolio-img-box' style="background-image: url(image/project1.png);">
+                        <a href=' https://shaham007.github.io/Personal-Website-01/' class='project-link' target="_blank"> View
                             Project</a>
                     </div>
-                    <div class='project-items portfolio-img-box' style="background-image: url(image/IMG-7851.jpg);">
-                        <a href=' https://shaham007.github.io/Personal-Website-01/' class='project-link'
+                    <div class='project-items portfolio-img-box' style="background-image: url(image/project5.png);">
+                        <a href='https://shaham007.github.io/Dice-Game/' class='project-link'
                             target="_blank"> View Project</a>
                     </div>
-                    <div class='project-items portfolio-img-box' style="background-image: url(image/IMG-7851.jpg);">
-                        <a href='https://naughty-torvalds-b70f75.netlify.app' class='project-link' target="_blank"> View
+                    <div class='project-items portfolio-img-box' style="background-image: url(image/project6.png);">
+                        <a href='https://gracious-rosalind-758789.netlify.app' class='project-link' target="_blank"> View
                             Project</a>
                     </div>
     
@@ -168,26 +174,26 @@
     
                     <div class='row'>
                         <div class='contact-form'>
-                            <form>
+                            <form onsubmit="sendEmail(); reset(); return false;">
                                 <div class='inner-row'>
     
                                     <div class='input-group'>
-                                        <input type="text" placeholder='First Name' class='input-control'
+                                        <input id="fName" type="text" placeholder='First Name' class='input-control'
                                             required></input>
                                     </div>
                                     <div class='input-group'>
-                                        <input type="text" placeholder='Last Name' class='input-control'
+                                        <input id="lName" type="text" placeholder='Last Name' class='input-control'
                                             required></input>
                                     </div>
                                     <div class='input-group'>
-                                        <input type="text" placeholder='Email' class='input-control' required></input>
+                                        <input id="emailInput" type="email" placeholder='Email' class='input-control' required></input>
                                     </div>
                                     <div class='input-group'>
-                                        <textarea type="text" placeholder='Message' class='input-control'
+                                        <textarea id="txtArea" type="text" placeholder='Message' class='input-control'
                                             required></textarea>
                                     </div>
                                     <div class='submit-btn'>
-                                        <button class='button'><span>Send <i class="far fa-paper-plane"></i></span> </button>
+                                        <button type="submit" class='button' onclick="audio.play();"><span>Send <i class="far fa-paper-plane"></i></span> </button>
                                     </div>
                                 </div>
                             </form>
@@ -199,7 +205,7 @@
         </div>
     
     </div>
-    
+<script src="https://smtpjs.com/v3/smtp.js"></script>
 <script src="index.js"></script>
 
 </body>
