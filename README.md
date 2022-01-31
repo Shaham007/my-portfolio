@@ -18,6 +18,8 @@ First Page have a hover effect changing its background color and also transformi
 
 I have added my CV.pdf file which can be downloaded when clicked on download button, and second button simply takes you to Projects section.
 
+There is a small animated text when clicked on Download button, which shows the file has been downloaded !!
+
 All Buttons have Audio effect when clicked !! (exluding Navbar links).
 
 This projects has small circles and a square at background which are animated and fixed at there position, And are fully responsive when decreased in size.
