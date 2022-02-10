@@ -74,3 +74,22 @@ function sendEmail(){
         `
     }).then( message => alert("Message has been Sent to Portfolio's owner Successfully"));
 }
+
+// Scroll Reveal Animation
+
+ScrollReveal({ 
+    reset: true,
+    distance:"50px",
+    duration: 2000,
+    delay:300
+ });
+
+ScrollReveal().reveal('.home-img',  { delay: 400, origin:"right" });
+ScrollReveal().reveal('.home-text', { delay: 400, origin: "left" });
+ScrollReveal().reveal('.buttons-cintainer', { delay: 800, origin: "bottom" });
+ScrollReveal().reveal('.about-text', { delay: 400, origin: "right" });
+ScrollReveal().reveal('.about-img', { delay: 400, origin: "left" });
+ScrollReveal().reveal('.skills-item', { delay: 400, interval: 100 });
+ScrollReveal().reveal('.portfolio-img-box', { delay: 400, interval: 100 });
+ScrollReveal().reveal('.input-group', { delay: 400, interval: 100 });
+ScrollReveal().reveal('.button', { delay: 400, interval: 100 });
