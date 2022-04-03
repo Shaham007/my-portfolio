@@ -12,7 +12,6 @@ window.addEventListener("load", () => {
     }, 600);
 });
 
-
 //NAVBAR
 
 const hamburger = document.querySelector(".hamburger");
@@ -22,7 +21,6 @@ hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("active");
     navMenu.classList.toggle("active");
 })
-
 
 document.querySelectorAll(".nav-links").forEach(
     n => n.addEventListener("click", () => {
@@ -41,7 +39,7 @@ cvButton.addEventListener("click", () => {
     clickedTxtContainer.style.visibility = "visible";
 
     setTimeout(() => {
-        clickedTxtContainer.style.visibility = "hidden";
+    clickedTxtContainer.style.visibility = "hidden";
 
     } , 1000);
 });

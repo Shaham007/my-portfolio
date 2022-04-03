@@ -39,12 +39,15 @@
    }
     &:hover .project-link{
         color: $pinkDarker;
-        border-bottom: 4px solid $pinkDarkest;
         transition: 0.3s;
     }
     .project-link{
         text-decoration: none;
         color: $purpleLight;
+        width: 100%;
+        height: 100%;
+        @include flexBox;
+        align-items: flex-end;
     }
 }
 @media(max-width:885px){
