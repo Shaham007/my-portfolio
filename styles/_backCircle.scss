@@ -1,0 +1,101 @@
+@import "variables";
+
+.bg-circles{
+    position: fixed;
+    top: 0;
+    height: 100%;
+    max-width: 1200px;
+    width: calc(100% - 30px);
+    left: 50%;
+    transform: translateX(-50%);
+    div {
+        position: absolute;
+        border-radius: 50%;
+    }
+    .circle-1 {
+        width: 60px;
+        height: 60px;
+        background-color: $blue;
+        left: 5%;
+        top: 18%;
+        opacity: 0.2;
+        animation: zoomInOut 5s linear infinite;
+    }
+    .circle-2{
+        height: 80px;
+        width: 80px;
+        background-color: $lighgtGreen;
+        left: 30%;
+        top: 50%;
+        opacity: 0.2;
+        animation: bounceTop 3.5s ease-in-out infinite;
+    }
+    .circle-3{
+        height: 90px;
+        width: 90px;
+        top: 80%;
+        right: -40px;
+        border-radius: 12px;
+        background-color: $tomato;
+        opacity: 0.3;
+        animation: zoomInOut_2 7s linear infinite;
+    } 
+}
+
+/* CIRCLE ANIMATIONS  */
+
+@keyframes bounceTop {
+    0%, 100% {
+        transform: translateY(-60px);
+        width: 80px;
+    }
+    50%{
+        transform: translateY(0px);
+        width: 120px;
+    }
+}
+@keyframes zoomInOut{
+    0%, 100%{
+        transform: scale(0.5);
+    }
+    50% {
+        transform: scale(1);
+    }
+}
+@keyframes zoomInOut_2{
+    0%, 100%{
+        transform: scale(0.7);
+    }
+    50% {
+        transform: scale(1);
+    }
+}
+
+/* CIRCLE MEDIA QUERRIES  */
+
+@media(max-width:550px){
+    @keyframes bounceTop {
+    0%, 100% {
+        transform: translateY(-60px);
+        width: 20px;
+        height: 20px;
+    }
+    50%{
+        transform: translateY(0px);
+        width: 40px;
+      }   
+    }
+    @keyframes zoomInOut{
+    0%, 100%{
+        transform: scale(0.5);
+        width: 30px;
+        height: 30px;
+        top: 22%;
+    }
+    50% {
+        transform: scale(1);
+        width: 40px;
+        height: 40px;
+        }
+    }
+}

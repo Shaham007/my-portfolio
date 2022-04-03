@@ -78,7 +78,6 @@ function sendEmail(){
 // Scroll Reveal Animation
 
 ScrollReveal({ 
-    reset: true,
     distance:"50px",
     duration: 2000,
     delay:300

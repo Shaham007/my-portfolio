@@ -1,0 +1,54 @@
+
+// GOOGLE FONTS 
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Roboto+Mono&family=The+Nautigal:wght@700&display=swap');
+
+@import "loader";
+@import "backCircle";
+@import "navbar";
+@import "mainSection";
+@import "aboutSection";
+@import "portfolioSection";
+@import "contactSection";
+
+html {
+  scroll-behavior: smooth;
+}
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Mochiy Pop P One', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.section{
+    background-color: $colorPrimary;
+    border: 1px solid $colorSecondary;
+    min-height: 85vh;
+    border-radius: 30px;
+    margin-top: 50px;
+    @include flexBox;
+    backdrop-filter: blur(3px);
+    z-index: 10;
+}
+
+/* CUSTOM SCROLLBAR  */
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: $purpleLight;
+}
+::-webkit-scrollbar-thumb{
+    background-color: $purpleDarker;
+}
+
+/* SECTIONS FOOTER  */
+
+.section-fotter{
+    margin-top: 70px;
+    font-size: 1.2rem;
+    @include flexBox;
+}

@@ -1,0 +1,114 @@
+
+.About{
+    min-height: 100vh;
+    background-image: $bgImgSecondary;
+    overflow-x: hidden;
+    font-size: 16px;
+    line-height: 1.2;
+}
+.about-content{
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* IMAGE & TEXT */
+
+.about-img{
+    width: 295px;
+    margin: auto;
+    height: 304px;
+    border: 4px solid $colorPrimary;
+    border-radius: 50%;
+    .about-img-box{
+        position: relative;
+        height: 100%;
+        margin: auto;
+        background-size: cover;
+        background-position-x: center;
+        object-fit: cover;
+        max-width: 100%;
+        background-color: $colorPrimary;
+        border-radius: 50%;
+        opacity: 0.94;
+        &:hover{
+            transform: scale(1.07);
+            transition: 0.5s;
+            background-color: $pinkLighter;
+            box-shadow: 0 0 40px $pinkLight;
+        }
+    }
+}
+
+ /* ABOUT IMAGE MEDIA QUERRIES */
+
+@media(max-width:840px){
+    .about-img{
+        width: 231px;
+        height: 242px;
+        .about-img-box{
+            height: 244px;
+            width: 228px;
+        }
+    }
+}
+@media(max-width:680px){
+    .about-img {
+    width: 155px;
+    height: 163px;
+    .about-img-box {
+        width: 152px;
+        height: 164px;
+        }
+    }
+}
+
+/* TEXT BOX  */
+
+.about-text{
+    max-width: 60%;
+    margin: 35px auto;
+    @include flexBox;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.about-text p{
+    text-align: start;
+    line-height: 1.9;
+    font-weight: 800;
+    font-size: 1rem;
+}
+
+/* TEXT BOX MEDIA QUERRIES  */
+
+@media(max-width:650px){
+    .about-text{
+    max-width: 311px;
+    margin: 35px auto;
+    padding: 15px;
+    }
+} 
+
+/* SKILLS TEXT SECTION  */
+
+.skills {
+    @include flexBox;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    flex-direction: row;
+    line-height: 1.8;
+    width: 100%;
+    .skills-item{
+        font-weight: 550;
+        font-size: 15px;
+        background-color: $colorPrimary;
+        border: 1px solid $colorSecondary;
+        padding: 5px 15px;
+        text-transform: capitalize;
+        margin: 0 10px 10px 0;
+        border-radius: 20px;
+        &:hover{
+            background-color: $pinkDark;
+            transition: 0.5s ease;
+        }
+    }
+}

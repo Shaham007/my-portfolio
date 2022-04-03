@@ -1,0 +1,40 @@
+// VARIABLES
+
+$bgImgPrimary :linear-gradient( #e6ccf5, #aef1ee);
+$bgImgSecondary :linear-gradient( #aef1ee, #efa2b4);
+$bgImgfourth : linear-gradient(#f7dac2 , #e6ccf5);
+$bgImgfifth : linear-gradient(#efa2b4, #faefd2);
+$bgImgsixth : linear-gradient(#faefd2,#e6ccf5);
+$colorPrimary : rgba(255, 255, 255, 0.40);
+$colorSecondary : rgba(255, 255, 255, 0.25);
+$red : red;
+$lightYellow : #FFE162;
+$lighgtGreen : rgb(30, 207, 24);
+$lightBlue: #daf0ef;
+$purpleLighter: #e9d6f3;
+$purpleLight: #e6ccf5;
+$purpleDark: #be78e6;
+$purpleDarker : #a200ff;
+$pinkLighter : #f1dee2;
+$pinkLight : #f0c2cc;
+$pinkDark: #f0b3c1;
+$pinkDarker: #F2789F;
+$pinkDarkest: #c22f5e;
+$white: #fff;
+$blue: #0000ff;
+$tomato: tomato;
+$yellowGreen: yellowgreen;
+$white: #fff;
+$blackLighter: #00000010;
+$blackLight: rgba(0, 0, 0, 0.625);
+$black: black;
+$z100: 100;
+
+// MIXINS 
+
+@mixin flexBox{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center; 
+}

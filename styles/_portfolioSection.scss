@@ -1,0 +1,86 @@
+
+.portfolio{
+    min-height: 100vh;
+    background-image: $bgImgfifth;
+    overflow-x: hidden;
+    font-size: 16px;
+    line-height: 1.2;
+    .portfolio-content{
+        max-width: 1200px;
+        margin: auto;
+    }
+}
+.project-container{
+    width: 100%;
+    height: 100%;
+    @include flexBox;
+    flex-direction: row;
+    border-radius: 20px;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-evenly;
+    padding: 41px 40px;
+}
+.project-items{
+    height: 256px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 30%;
+    padding-bottom: 30px;
+    @include flexBox;
+    background-color: $colorSecondary;
+    flex-direction: column;
+    box-shadow: 5px 5px 20px $blackLight;
+    justify-content: flex-end;
+    &:hover{  
+        box-shadow: 0px 0px 30px $pinkDarker;
+        transition: 0.2s ease-in;
+   }
+    &:hover .project-link{
+        color: $pinkDarker;
+        border-bottom: 4px solid $pinkDarkest;
+        transition: 0.3s;
+    }
+    .project-link{
+        text-decoration: none;
+        color: $purpleLight;
+    }
+}
+@media(max-width:885px){
+    .project-items{
+        height: 206px;
+        width: 40%;
+    }
+}
+@media(max-width:600px){
+    .project-items{
+        height: 178px;
+    }
+}
+@media(max-width:480px){
+    .project-items{
+        height: 148px;
+        width: 50%;
+    }
+}
+@media(max-width:480px){
+    .project-items {
+    height: 163px;
+    width: 70%;
+    }  
+}
+@media(max-width:355px){
+    .project-items {
+    height: 163px;
+    width: 80%;
+    }
+}
+
+/* PORTFOLIO IMAGE */
+
+.portfolio-img-box{
+    position: relative;
+    background-size: cover;
+    background-position-x: center;
+    object-fit: cover;
+}
